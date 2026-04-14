@@ -1,4 +1,3 @@
 ## A Quarto Manuscript Template
 
-This is a template repo for generating a manuscript from Quarto that accompanies the tutorial at: [Quarto Manuscripts: RStudio](https://quarto.org/docs/manuscripts/authoring/rstudio.html)
-
+Our project intends to observe the shore crab's stress response to predator cues (green crab) and how those stress responses shift with the pressence of pollutants. 
