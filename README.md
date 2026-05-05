@@ -12,6 +12,7 @@ List of Materials
 - 2 containers 
 - 4 of the holed jars
 - 1 jar for the polluted green crab
+- Roll of Tint Film
 - Ammonia Strips
 - Resazurin
 - Plastic cups for resazurin
