@@ -25,3 +25,4 @@ Link to Datasheet:  https://docs.google.com/spreadsheets/d/18fmupmXhDf_wLBIX4AUX
 <img width="2160" height="2880" alt="image" src="https://github.com/user-attachments/assets/3262c6e7-7174-4be3-b1f0-dd79dfb6fa75" />
 
 Crab containers were covered to prevent the crabs from seeing the green crab when added. Materials for the polluted water were also gathered and the water will be made to sit tomorrow.
+Link to Methods sheet: https://docs.google.com/document/d/1mZanHSWTdkDrsLaTf9QKz0SgW_sbLjU1_wQH6K4_3H0/edit?usp=sharing
