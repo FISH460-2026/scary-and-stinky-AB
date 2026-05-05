@@ -11,7 +11,6 @@ List of Materials
 - Herbicide
 - 2 containers 
 - 4 of the holed jars
-- roll of plastic mesh
 - 1 jar for the polluted green crab
 - Ammonia Strips
 - Resazurin
