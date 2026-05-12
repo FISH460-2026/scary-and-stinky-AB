@@ -1,0 +1,26 @@
+---
+title: "Mass Graph"
+author: "Noah Ozguner"
+date: "2026-05-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readr)
+library(tidyverse)
+```
+
+```{r}
+crab <- read_csv("C:/Users/noaho/Downloads/crab_data_Lab6 (1).csv")
+View(crab)
+```
+
+```{r}
+ggplot(data = crab, aes(x=treatment, y =mass)) +
+  geom_boxplot()
+```
+
