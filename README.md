@@ -7,11 +7,11 @@ Research Question: How do Puget Sound pollutants affect Hemigrapsus oregonensis'
 Our project intends to observe the shore crab's stress response to olfactory predator cues (green crab) and how those stress responses shift with the pressence of pollutants. 
 
 
-Null Hypothesis: The pollution will not affect the stress response of H.oregonesis in the presence of C.meaenas.
+- Null Hypothesis: The pollution will not affect the stress response of H.oregonesis in the presence of C.meaenas.
 
-Alternative Hypothesis: The polluted waters will affect the stress response of H.oregonesis in the presence of C.meaenas. 
+- Alternative Hypothesis: The polluted waters will affect the stress response of H.oregonesis in the presence of C.meaenas. 
 
-Sub-alt: H.oregoensis will not smell, or otherwise detect, their invasive predators, C. maenas, as effectively in polluted water.
+  - Sub-alt: H.oregoensis will not smell, or otherwise detect, their invasive predators, C. maenas, as effectively in polluted water.
 
 
 List of Materials
