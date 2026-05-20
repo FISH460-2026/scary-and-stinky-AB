@@ -1,0 +1,108 @@
+---
+title: "Mass Graph"
+author: "Noah Ozguner"
+date: "2026-05-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(readr)
+library(tidyverse)
+library(dplyr)
+library(car)
+```
+
+```{r}
+crab <- read_csv("C:/Users/noaho/Downloads/crab_data_Lab6 (1).csv")
+View(crab)
+```
+
+```{r}
+ggplot(data = crab, aes(x=treatment, y =mass)) +
+  geom_boxplot()
+```
+
+```{r}
+res_data <- read_csv("C:/Users/noaho/Downloads/res_rdata.csv")
+res2_data <- read_csv("C:/Users/noaho/Downloads/res2_data.csv")
+flick_data <- read_csv("C:/Users/noaho/Downloads/flick_data.csv")
+```
+
+```{r}
+Final_Res <- res_data %>% 
+  filter(Time == "T2")
+
+Final_Res$Treatment[Final_Res$Treatment == "1A" ] <- "Control"  
+
+Final_Res$Treatment[Final_Res$Treatment == "1B" ] <- "Pollution"  
+
+Final_Res$Treatment[Final_Res$Treatment == "2A" ] <- "Predator Cues"  
+
+Final_Res$Treatment[Final_Res$Treatment == "2B" ] <- "Pollution and Predator Cues"  
+
+```
+
+
+
+```{r}
+ggplot(data = Final_Res, aes(x=Treatment, y =Fluoresence)) +
+  geom_boxplot(aes(fill = Treatment)) +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+
+```{r}
+ggplot(data = res2_data, aes(x=Treatment, y =Fluoresence)) +
+  geom_boxplot(aes(fill = Treatment)) +
+  theme_minimal() +
+  theme(legend.position = "none")
+```
+
+```{r}
+summary_data <- flick_data %>%
+  group_by(Treatment) %>%
+  summarise(
+    mean_high = mean(High, na.rm = TRUE),
+    sd_high   = sd(High, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+# Plot
+ggplot(summary_data, aes(x = Treatment, y = mean_high, fill = Treatment)) +
+  geom_bar(stat = "identity") +
+  geom_errorbar(
+    aes(ymin = mean_high - sd_high, ymax = mean_high + sd_high),
+    width = 0.2, alpha = 0.9, size = 0.5
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  labs(y = "Mean High value")
+
+```
+
+```{r}
+summary_data_low <- flick_data %>%
+  group_by(Treatment) %>%
+  summarise(
+    mean_low = mean(Low, na.rm = TRUE),
+    sd_low   = sd(Low, na.rm = TRUE),
+    .groups = "drop"
+  )
+
+# Plot
+ggplot(summary_data_low, aes(x = Treatment, y = mean_low, fill = Treatment)) +
+  geom_bar(stat = "identity") +
+  geom_errorbar(
+    aes(ymin = mean_low - sd_low, ymax = mean_low + sd_low),
+    width = 0.2, alpha = 0.9, size = 0.5
+  ) +
+  theme_minimal() +
+  theme(legend.position = "none") +
+  labs(y = "Mean High value")
+
+```
+
