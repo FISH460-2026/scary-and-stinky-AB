@@ -7,9 +7,11 @@ Alt: There will be a change in the metabolic rate or antennae flicking per minut
 Sub-alt: There will be a decrease in the metabolic rate and antennae flicking per minute  when H.oregonesis in the presence of C.meaenas while exposed to pollutants.
 
 <img width="525" height="324" alt="000012" src="https://github.com/user-attachments/assets/71ce3880-f407-47e6-bc67-6b095c1467bd" />
+
 Figure 1 The final fluoresence (T2) in each of the four treatment groups after standardization. Groups are colored based on pollutant exposure level. Dashed line and highlighted region represents the mean control value and the standard deviation for more accurate comparison. 
 
 <img width="525" height="324" alt="000014" src="https://github.com/user-attachments/assets/6773e203-851a-4f2a-b0cd-30c265c077c6" />
+
 Figure 2 The mean antennae flicking per minute in each of the four treatment groups with the standard deviation. Groups are colored based on pollutant exposure level. 
 
 ## Project Outline
